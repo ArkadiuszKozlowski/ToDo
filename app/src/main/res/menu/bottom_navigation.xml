@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/overview"
+        android:icon="@drawable/ic_access_time_24dp"
+        android:title="Overview" />
+
+    <item
+        android:id="@+id/periodic"
+        android:title="Periodic"
+        android:icon="@drawable/ic_timer_24dp" />
+
+    <item
+        android:id="@+id/history"
+        android:icon="@drawable/ic_history_24dp"
+        android:title="History" />
+</menu>
