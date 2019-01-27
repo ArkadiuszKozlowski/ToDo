@@ -7,7 +7,7 @@ import com.github.akmn.todo.data.dao.TaskDao
 
 class ToDoApplication : Application() {
 
-    private lateinit var taskDao: TaskDao
+    lateinit var taskDao: TaskDao
 
     override fun onCreate() {
         super.onCreate()
