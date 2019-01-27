@@ -3,11 +3,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.OverviewFragment">
+    tools:context=".view.list.OverviewFragment">
 
-    <TextView
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/task_list_view"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Overview" />
+        android:scrollbars="vertical"
+        android:layout_height="match_parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
 
 </FrameLayout>

@@ -2,12 +2,13 @@ package com.github.akmn.todo.data.dao
 
 import androidx.room.*
 import com.github.akmn.todo.data.model.TaskEntity
+import io.reactivex.Single
 
 @Dao
 interface TaskDao {
 
     @Query("select * from tasks")
-    fun getAllTasks(): List<TaskEntity>
+    fun getAllTasks(): Single<List<TaskEntity>>
 
     @Query("select * from tasks where id = :id")
     fun findTaskById(id: Long): TaskEntity
